@@ -9,14 +9,14 @@ public class MadLibs {
         ArrayList<String> questions = new ArrayList<>(Arrays.asList("noun", "adjective", "verb"));
 
         for (int i = 0; i < 6; i++) {
-            System.out.println("Write a " + questions.get(i % 3) + ": ");
+            System.out.println("Write " + questions.get(i % 3) + ": ");
             String input1 = scanner.nextLine();
             words.add(input1);
         }
         System.out.println(words);
 
-        String story = "The " + words.get(0) + " was very " + words.get(2) + ". It loved to " + words.get(4) +
-                ". One day, a " + words.get(1) + " " + words.get(3) + " appeared, and together they started to "
+        String story = "The " + words.get(0) + " was very " + words.get(1) + ". It loved to " + words.get(2) +
+                ". One day, a " + words.get(4) + " " + words.get(3) + " appeared, and together they started to "
                 + words.get(5) +
                 ". What a day full of surprises!";
 

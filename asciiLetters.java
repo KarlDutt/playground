@@ -52,10 +52,10 @@ public class asciiLetters {
             case 'G':
                 return new String[] {
                         " ##### ",
-                        "#     #",
                         "#      ",
+                        "#   ### ",
                         "#     #",
-                        " ##### "
+                        " #####"
                 };
             case 'H':
                 return new String[] {

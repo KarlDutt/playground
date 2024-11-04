@@ -25,16 +25,21 @@ public class asciiArt {
             letterArray.add(String.valueOf(text.charAt(i)));
         }
 
-        for (int i = 0; i < letterArray.size(); i++){
-            char c = letterArray.charAt(0);
+        for (String s : letterArray){
+            char c = s.charAt(0);
             String[] art = asciiMap.get(c);
-            for (String line : art) {
-                System.out.println(line);
+            if (art != null) {
+                for (String line : art) {
+                    System.out.println(line);
             }
             System.out.println();
+            } else {
+                System.out.println("Invalid character; " + c);
+            }
 
 
         }
+        scanner.close();
 
     }
 
